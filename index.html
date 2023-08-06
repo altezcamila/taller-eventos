@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi página con botón</title>
+    <title>Document</title>
 </head>
+<script src="eventos.js"></script>
+<link rel="stylesheet" href="estilos.css">
 <body>
     <h1>Bienvenido a mi página</h1>
 
-    <!-- Botón con el texto "Saludar" -->
-    <button>Saludar</button>
+   <!-- Div que contiene el botón -->
+   <div id="contenedor">
+    <button onclick="mostrarAlerta()">Saludar</button>
+</div>
+
+    <!-- Script para la función mostrarAlerta() -->
+    <script>
+        function mostrarAlerta() {
+            alert('Hola!');
+        }
+    </script>
 </body>
 </html>
